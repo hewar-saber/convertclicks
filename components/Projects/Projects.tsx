@@ -7,7 +7,7 @@ export default function Projects() {
         <Marquee rotate='var(--rorate)'>
             <Image
                 src='/images/Fotballbilletter.webp'
-                alt='ClickConverts™ Online Reputation Management Software'
+                alt='ConvertClicks website project'
                 width={800}
                 height={500}
                 layout='responsive'
@@ -15,7 +15,7 @@ export default function Projects() {
             />
             <Image
                 src='/images/aic-website.webp'
-                alt='ClickConverts™ Online Reputation Management Software'
+                alt='ConvertClicks website project'
                 width={800}
                 height={500}
                 layout='responsive'
@@ -23,7 +23,7 @@ export default function Projects() {
             />
             <Image
                 src='/images/Fotballbilletter-mockup.webp'
-                alt='ClickConverts™ Online Reputation Management Software'
+                alt='ConvertClicks website project'
                 width={800}
                 height={500}
                 layout='responsive'
@@ -31,7 +31,7 @@ export default function Projects() {
             />
             <Image
                 src='/images/aic-website-mockup.webp'
-                alt='ClickConverts™ Online Reputation Management Software'
+                alt='ConvertClicks website project'
                 width={800}
                 height={500}
                 layout='responsive'

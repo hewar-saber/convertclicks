@@ -181,7 +181,7 @@ export default function Page() {
                 <details>
                     <summary>Who are your designers?</summary>
                     <p>
-                        ClickConverts is a one-man agency, so you&apos;ll work
+                        ConvertClicks is a one-man agency, so you&apos;ll work
                         directly with Hewar, the founder. This guarantees our
                         clients always receive the highest quality.
                     </p>

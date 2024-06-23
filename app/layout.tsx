@@ -5,9 +5,9 @@ import Script from 'next/script'
 import { GeistSans } from 'geist/font/sans'
 import Footer from '@/components/Footer/Footer'
 
-const title = 'ClickConverts'
+const title = 'ConvertClicks'
 const description =
-    'Get more revenue with more 5-star reviews. Manage your online reputation with ClickConverts.'
+    'Get a high converting landing page that turns clicks into sales'
 const url = process.env.WEBSITE_URL
 const images = [
     {
@@ -32,27 +32,22 @@ export const metadata: Metadata = {
         title,
         images
     },
-    publisher: 'ClickConverts',
+    publisher: 'ConvertClicks',
     category: 'Business',
     keywords: [
-        'ClickConverts',
-        'Review',
-        'Surplus',
-        'Get more revenue',
-        '5-star reviews',
-        'Manage your online reputation',
-        'Online reputation',
-        'More positive reviews',
-        'protect your online reputation',
-        'Online reputation management',
-        'protect against negative reviews',
-        'Online reputation monitoring',
-        'Online reputation repair',
-        'Online reputation management services',
-        'Online reputation management companies',
-        'Online reputation management tools',
-        'Online reputation management software',
-        'Online reputation management agency'
+        'ConvertClicks',
+        'Web design',
+        'Web design agency',
+        'Landing page design',
+        'Landing page',
+        'Website design',
+        'Website',
+        'Web development',
+        'High converting website',
+        'High converting landing page',
+        'High converting',
+        'High converting design',
+        'High converting web design'
     ],
     alternates: {
         canonical: process.env.WEBSITE_URL
@@ -90,41 +85,10 @@ export default function RootLayout({
                 <link
                     rel='mask-icon'
                     href='/safari-pinned-tab.svg'
-                    color='#000000'
+                    color='#5bbad5'
                 />
-                <meta name='msapplication-TileColor' content='#000000' />
+                <meta name='msapplication-TileColor' content='#303030' />
                 <meta name='theme-color' content='#ffffff' />
-
-                {process.env.NODE_ENV === 'production' && (
-                    <Script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-
-                            (function(f, b, e, v, n, t, s) {
-                                if (f.fbq) return;
-                                n = f.fbq = function() {
-                                  n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-                                };
-                                if (!f._fbq) f._fbq = n;
-                                n.push = n;
-                                n.loaded = true;
-                                n.version = '2.0';
-                                n.queue = [];
-                                t = b.createElement(e);
-                                t.async = true;
-                                t.src = v;
-                                s = b.getElementsByTagName(e)[0];
-                                s.parentNode.insertBefore(t, s);
-                              })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-                  
-                              fbq('init', '899628412174054');
-                              fbq('track', 'PageView');
-                        `
-                        }}
-                        id='facebook-pixel'
-                        strategy='afterInteractive'
-                    />
-                )}
             </head>
             <body className={GeistSans.className}>
                 <Header />

@@ -6,7 +6,7 @@ import arrowWhite from '@/public/icons/white-arrow-iso.svg'
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className={styles.copy}>© 2024 ClickConverts</div>
+            <div className={styles.copy}>© 2024 ConvertClicks</div>
             <Link href='https://reviewsurplus.com/'>
                 <picture>
                     <source
