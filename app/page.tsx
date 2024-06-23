@@ -226,8 +226,9 @@ export default function Page() {
                 <details>
                     <summary>What technologies do you use?</summary>
                     <p>
-                        Depending on the project, we might recommend Next.js,
-                        Framer, Wordpress or even other frameworks.
+                        Depending on the project, we might recommend Next.js, or
+                        Framer. We use only these two frameworks as we deliver
+                        the highest of quality.
                     </p>
                 </details>
                 <details>
