@@ -1,0 +1,29 @@
+.footer {
+    padding: var(--group-big) var(--body-padding);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    gap: var(--group-big);
+}
+
+.footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--group-small);
+    transition: var(--default-transition);
+}
+
+.footer a:hover {
+    color: var(--a-color);
+}
+
+.footer a img {
+    transition: transform var(--default-transition);
+}
+
+.footer a:hover img {
+    transform: rotate(-45deg);
+}

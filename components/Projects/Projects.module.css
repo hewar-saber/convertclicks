@@ -1,0 +1,9 @@
+.projects {
+    display: flex;
+    /* gap: var(--group-medium); */
+    /* margin-right: var(--group-medium); */
+}
+
+.projects img {
+    max-width: 800px;
+}

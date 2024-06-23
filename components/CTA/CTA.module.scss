@@ -1,0 +1,96 @@
+a.cta,
+a.secondary {
+    display: block;
+    width: max-content;
+    padding: calc(var(--form-element-padding) * 1.2)
+        calc(var(--form-element-padding) * 3);
+
+    border-radius: var(--form-element-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-100);
+    font-weight: bolder;
+    color: var(--foreground-100);
+    text-decoration: none;
+    transition: var(--default-transition);
+    text-align: center;
+    font-weight: 800;
+
+    border: 2px solid var(--primary-400);
+    box-shadow: var(--button-shadow);
+    -webkit-box-shadow: var(--button-shadow);
+    font-size: var(--body-size-3);
+}
+
+a.cta {
+    color: #000;
+    &:focus {
+        box-shadow: var(--button-shadow);
+        outline: var(--outline);
+        box-shadow: var(--button-shadow);
+        scale: calc(2 - var(--scale));
+
+        box-shadow: inset var(--button-shadow);
+        -webkit-box-shadow: inset var(--button-shadow);
+    }
+
+    &:hover {
+        background: var(--primary-400);
+    }
+
+    &.reverse {
+        &:focus {
+            box-shadow: var(--button-shadow-reverse);
+        }
+    }
+}
+
+a.secondary {
+    background: none;
+    border: var(--light-border);
+    color: var(--foreground-100);
+
+    &:focus {
+        box-shadow: var(--button-shadow);
+        outline: var(--outline);
+        box-shadow: var(--button-shadow);
+        scale: var(--scale);
+    }
+
+    &:hover {
+        background: var(--foreground-300);
+        color: var(--background-100);
+    }
+
+    &.reverse {
+        color: var(--background-100);
+
+        &:hover {
+            background: var(--background-100);
+            color: var(--foreground-100);
+        }
+
+        &:focus {
+            background: var(--background-100);
+            color: var(--foreground-100);
+            box-shadow: var(--button-shadow-reverse);
+        }
+    }
+}
+
+.cta.ctaBig {
+    padding: 15px 30px;
+    box-shadow: var(--button-shadow);
+    font-size: var(--body-size-3);
+    border: 3px solid var(--primary-400);
+}
+
+@media (max-width: 500px) {
+    a.cta {
+        width: 100%;
+    }
+    a.secondary {
+        width: 100%;
+    }
+}

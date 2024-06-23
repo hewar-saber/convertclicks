@@ -1,0 +1,59 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--group-small);
+    padding: var(--form-element-padding);
+    border-radius: var(--form-element-radius);
+    width: max-content;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: var(--default-transition);
+    font-weight: bolder;
+    text-decoration: none;
+    font-weight: 600;
+
+    &.primary {
+        background: var(--primary-100);
+        border: var(--light-border);
+        border-color: var(--primary-100);
+    }
+
+    &.secondary {
+        border: var(--light-border);
+    }
+
+    &.secondary {
+        &:focus {
+            border-color: var(--outline-color);
+            outline: var(--outline);
+            box-shadow: var(--button-shadow);
+            background: var(--background-100);
+            scale: var(--scale);
+        }
+
+        &:hover {
+            background: var(--foreground-300);
+            color: var(--background-100);
+            img {
+                filter: invert(100%);
+            }
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: var(--group-small);
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    .button {
+        width: 100%;
+    }
+}

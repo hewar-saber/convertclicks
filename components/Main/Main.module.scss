@@ -1,0 +1,10 @@
+.main {
+    padding: var(--row-spacing) var(--body-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--row-spacing);
+
+    &.noPaddingTop {
+        padding-top: 0;
+    }
+}
